@@ -460,7 +460,7 @@ main.index-page-main {
     }
     
     .gallery {
-      display: flex;
+      display: inline-block;
       flex-wrap: wrap;
       justify-content: center;
     }
