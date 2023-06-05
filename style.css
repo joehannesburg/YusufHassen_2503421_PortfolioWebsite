@@ -1,7 +1,7 @@
 
 /* Main Styling Index Page */
  body.index-page {
-  background: url(./Images/yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg) no-repeat;
+  background: url(./Images/yuriy-kovalev-nN1HSDtKdlw-unsplash\ \(1\).jpg) no-repeat;
   background-size: cover;
   height: 100vh; 
   max-width: 100%;
@@ -21,7 +21,7 @@
 
 /* Main Styling Profile Page */
 body.profile-page {
-  background: url(./Images/yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg) no-repeat;
+  background: url(./Images/yuriy-kovalev-nN1HSDtKdlw-unsplash\ \(1\).jpg) no-repeat;
   background-size: cover;
   height: 100vh;
   max-width: 100%;
@@ -32,7 +32,7 @@ body.profile-page {
 
 /* Main Styling Essay Page */
 body.essay-page {
-  background: url(./Images/yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg) no-repeat;
+  background: url(./Images/yuriy-kovalev-nN1HSDtKdlw-unsplash\ \(1\).jpg) no-repeat;
   background-size: cover;
   min-height: 100vh;
  max-width: 100%; 
@@ -42,7 +42,7 @@ body.essay-page {
 
 /* Main Styling Blog Page */
 body.blog-page {
-  background: url(./Images/yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg) no-repeat;
+  background: url(./Images/yuriy-kovalev-nN1HSDtKdlw-unsplash\ \(1\).jpg) no-repeat;
   background-size: cover;
   min-height: 100vh;
   max-width: 100%;
@@ -52,7 +52,7 @@ body.blog-page {
 
 /* Main Styling Design Page */
 body.design-page {
-  background: url(./Images/yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg) no-repeat;
+  background: url(./Images/yuriy-kovalev-nN1HSDtKdlw-unsplash\ \(1\).jpg) no-repeat;
   background-size: cover;
   min-height: 100vh;
   max-width: 100%;
@@ -63,7 +63,7 @@ body.design-page {
 
 /* Main Styling Portfolio Page */
 body.portfolio-page {
-  background: url(./Images/yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg) no-repeat;
+  background: url(./Images/yuriy-kovalev-nN1HSDtKdlw-unsplash\ \(1\).jpg) no-repeat;
   background-size: cover;
   min-height: 100vh;
   max-width: 100%;
@@ -73,7 +73,11 @@ body.portfolio-page {
 
 /* Nav Styling For All Pages */
 nav {
-  /*background: rgba(0, 0, 0, 0.7);*/
+ position: fixed;
+ top: 0;
+ left: 50%;
+ transform: translateX(-50%);
+ width: 100%;
   display: flex;
    align-items: center;
    justify-content: center;  
@@ -81,8 +85,15 @@ nav {
   background-color: rgba(88, 198, 235, 0.4);
   border-radius: 10px;
   height: 3vh;
+  transition: background-color 0.3s;
+ 
   
  
+}
+
+nav.scrolled {
+background-color: rgba(69, 158, 187, 0.9) ;
+
 }
 
 nav ul{
@@ -127,7 +138,7 @@ main.index-page-main {
   margin-top: 7vh;
 
   overflow-x: hidden;
- /* transform: translateY(-50%);*/
+
 }
 
   main.index-page-main h1 {
@@ -193,9 +204,10 @@ main.index-page-main {
   }
   
   .page-header h1 {
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
     text-decoration: underline;
+    margin-top: 8vh;
   }
   
   
@@ -207,10 +219,10 @@ main.index-page-main {
     width: 30%;
     margin: 1em;
     margin-top: 4vh;
-    background-color: rgba(122, 208, 242, 0.4);
+    background: linear-gradient(135deg, rgba(173, 247, 242, 0.7), rgba(91, 195, 255, 0.7));
     padding: 1em;
     box-sizing: border-box;
-    border: #f7f7f7;
+    border: #000000;
     box-shadow: -10px 0 40px #00435e
   }
 
@@ -234,7 +246,7 @@ main.index-page-main {
   }
 
   .year-txt{
-    color: #0184b0;
+    color: #ffffff;
   }
 
   .position-txt {
@@ -249,40 +261,43 @@ main.index-page-main {
 
      /* Main Text Styling Essay Page */
 
-     .essay-page img{
-      width: 10%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 60px;
-     }
-  main.essay-page-main {
+    
+  .essay-page-main {
   
 
     color: rgb(255, 255, 255);
-    text-align: left;
-   /* transform: translateY(-50%);*/
+    text-align: center;
+  
   }
   
-    main.essay-page-main h1 {
+    .essay-page-main h1 {
       color: rgb(0, 0, 0);
-      margin-top: 60px;
-      font-size: 45px;
-      padding-left: 270px;
+      font-size: 3em;
+      font-weight: bold;
+      text-decoration: underline;
+      margin-top: 8vh;
+      
     }
   
-    main.essay-page-main p {
-      width: 800px;
+    .essay-content {
+      width: 60vw;
       color: #000101;
-      background-color: rgba(255, 237, 237, 0.5);
+      background: linear-gradient(90deg, rgba(173, 247, 242, 0.6), rgba(91, 195, 255, 0.6));
       border: #000101;
-      padding: 10px;
-      margin-left: 270px;
+      padding: 5vh;
+      margin: 2vh auto;
+      margin-top: 8vh;
       display: block;
-    font-size: 20px;
-    box-shadow: -10px 0 40px #000101
+    font-size: 1.3em;
+    box-shadow: -2vw 0 2vw #747474
     
     
+    }
+    
+    .essay-content span{
+      text-decoration: underline;
+      font-weight: bold;
+     
     }
     
     
@@ -290,278 +305,335 @@ main.index-page-main {
     /* Main Text Styling Blog Page */
 
 
-    .blog-page img{
-      width: 8%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 20px;
-      
-    }
-    .blog-page-main h1{
-
-      color: rgb(0, 0, 0);
-      margin-top: 45px;
-      font-size: 45px;
-      padding-left: 600px;
-      font-style: normal;
-      text-decoration: underline;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-
-    .blog-page-main h2{
-      color: rgb(198, 197, 197);
-      margin-top: 45px;
-      font-size: 20px;
-      padding-left: 460px;
-      margin-top: 0px;
-    }
     
-    .blog-section {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    
-    .blog-post {
-      width: 100%;
-      margin-top: 100px;
-      margin-left: 10px;
-      margin-right: 20px;
-      padding: 20px;
-      background-color: rgba(227, 242, 251, 0.7);
-      border: #000101;
-      box-shadow: -10px 0 40px #000101
-    }
-    
-    .blog-post h3 {
-      margin-top: 0;
-      margin-bottom: 20px;
-      color: #e6aa8a;
-      text-decoration: underline  #0286b1;
-      text-shadow: #000101;
-      font-size: 35px;
-      font-style: oblique;
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-    
-    .blog-post p {
-      margin-bottom: 20px;
-      font-size: 19px;
-      line-height: 1.2;
-      
-    }
-    
-    .blog-post a {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #333;
-      color: #fff;
-      text-decoration: none;
+    .main-header {
+      font-size: 1.5em;
       font-weight: bold;
-      border-radius: 5px;
-      
+      text-decoration: underline;
+      text-align: center;
+      margin-top: 8vh;
     }
+
+    /* accordion code referenced from: CodingLab (2022). How to Create Responsive Accordion in HTML CSS & JavaScript. [online] www.youtube.com. Available at: https://youtu.be/B_wscu_ijwU [Accessed 4 Jun. 2023].  */
     
-    .blog-post a:hover {
-      background-color: #666;
-    }
-    
-    .blog-post-main nav{
+    .accordion main {
+      min-height: 100vh;
       display: flex;
       align-items: center;
-    justify-content: space-between;
-      
-      padding-left: 37vh;
-      padding-top: 1vh;
-    }
-
-    .blog-page-main nav li{
-      list-style-type: none;
-  display: inline-block;
-  margin-right: 20px;
-    }
-
-    .blog-page-main nav li a{
-      
-      font-size: 23px;
-  font-weight: bold;
-  
-  color: rgb(0, 0, 0);
-  text-decoration: underline;
-  padding: 5px;
+      justify-content: center;
+      background: #E3F2FD;
     }
     
-    .blog-page-main nav li a:hover{
-      color: #e09408;
-      transition: .3s;
+    .accordion {
+      max-width: 90em;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.3) ;
+      margin: 0 auto;
+      
+      padding: 1em;
+      border-radius: 0.8em;
+      box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.8);
     }
+    
+    .accordion .accordion-content {
+      margin: 1em 0;
+      border-radius: 0.4em;
+      background: linear-gradient(135deg, rgba(173, 247, 242, 0.7), rgba(91, 195, 255, 0.7));
+      border: 0.1em solid #000000;
+      overflow: hidden;
+    }
+    
+    
+    .accordion-content.open {
+      padding-bottom: .5em;
+    }
+    
+    .accordion-content header {
+      display: flex;
+      min-height: 1vh;
+      padding: 0 1.5em;
+      cursor: pointer;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.2s linear;
+    }
+    
+    .accordion-content.open header {
+      min-height: 1em;
+    }
+    
+    .accordion-content header .title {
+      font-size: 1.4em;
+      font-weight: 500;
+      color: #333;
+    }
+    
+    .accordion-content header i {
+      font-size: 1.5em;
+      color: #333;
+    }
+    
+    .accordion-content .description {
+      height: 0;
+      font-size: 1.1em;
+      color: #333;
+      font-weight: 400;
+      padding: 0 1.5em;
+      transition: all 0.2s linear;
+      overflow: hidden;
+    }
+    
+    
+
+  
+    
+    
 
     /* Styling for Design Page */
 
-    .design-page img{
-      width: 8%;
+    .main-header {
+      font-size: 1.5em;
+      font-weight: bold;
+      text-decoration: underline;
+      text-align: center;
+      margin-top: 8vh;
+    }
+
+    .IxD {
+      width: 90vw;
+      color: #000101;
+      background: linear-gradient(90deg, rgba(173, 247, 242, 0.6), rgba(91, 195, 255, 0.6));
+      border: #000101;
+      padding: 1vh;
+      margin: 2vh auto;
+      margin-top: 5vh;
       display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 30px;
+    font-size: 1.4em;
+    box-shadow: -2vw 0 2vw #747474
+    }
+
+    .IxD-header {
+      text-align: center;
+
+    }
+
+    .IxD-content {
+      width: 80vw;
+      padding-left: 3vw;
+    }
+
+    .IxD-content span{
+      text-decoration: underline;
+    }
+
+    .IxD-content img{
+      margin-left: 4vw;
+      width: 35%
+      
       
     }
 
-    .design-page-main h1{
-        
-        color: rgb(0, 0, 0);
-        margin-top: 45px;
-        font-size: 45px;
-        padding-left: 550px;
-        font-style: normal;
+    .indent-txt {
+      padding-left: 3em;
+    }
+
+    .style-guide {
+      width: 90vw;
+      color: #000101;
+      background: linear-gradient(90deg, rgba(173, 247, 242, 0.6), rgba(91, 195, 255, 0.6));
+      border: #000101;
+      padding: 1vh;
+      margin: 2vh auto;
+      margin-top: 5vh;
+      display: block;
+    font-size: 1.4em;
+    box-shadow: -2vw 0 2vw #747474
+    }
+
+    .style-header{
+    
+      text-align: center;
+    
+    }
+
+    .styleguide-content {
+      width: 80vw;
+      padding-left: 3vw;
+    }
+
+      .styleguide-content span{
         text-decoration: underline;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
+      }
 
-    .original-wireframes h2{
-      color: rgb(0, 0, 0);
-      margin-top: 45px;
-      font-size: 25px;
-      margin-left: 20px;
-      
-    }
+      .wireframes {
+        width: 90vw;
+      color: #000101;
+      background: linear-gradient(90deg, rgba(173, 247, 242, 0.6), rgba(91, 195, 255, 0.6));
+      border: #000101;
+      padding: 1vh;
+      margin: 2vh auto;
+      margin-top: 5vh;
+      display: block;
+    font-size: 1.4em;
+    box-shadow: -2vw 0 2vw #747474
+      }
 
-.original-wireframes img{
-  display: inline-block;
-  margin-top: 20px;
-  width: 45%;
-  margin-left: 20px;
-}
+      .wireframe-header{
+        text-align: center;
+      }
 
-.IxD h3{
-  color: rgb(0, 0, 0);
-      margin-top: 40px;
-      font-size: 25px;
-      margin-left: 20px;
-      float: left;
-      
-}
+      .wireframe-content{
+        width: 80vw;
+      padding-left: 3vw;
+      }
 
-.IxD p{
-  color: rgb(0, 0, 0);
-  margin-top: 0px;
-  font-size: 18px;
-  margin-left: 19px;
-  width: 1300px;
-  float: left;
-  
-  
-}
+      .wireframe-content span{
+        text-decoration: underline;
+      }
 
-.IxD span{
-  color: #545555;
- font-style: italic;
-}
+      .wireframe-content img {
+        margin-left: 7vw;
+        width: 40%
+        
+      }
 
-.IxD img{
-  display: inline-block;
-  margin-top: 20px;
-  width: 21%;
-  margin-left: 20px;
-}
+      .implement-notes{
+        width: 90vw;
+        color: #000101;
+        background: linear-gradient(90deg, rgba(173, 247, 242, 0.6), rgba(91, 195, 255, 0.6));
+        border: #000101;
+        padding: 1vh;
+        margin: 2vh auto;
+        margin-top: 5vh;
+        display: block;
+      font-size: 1.4em;
+      box-shadow: -2vw 0 2vw #747474
+      }
 
-.style-guide h4{
-  color: rgb(0, 0, 0);
-      margin-top: 30px;
-      font-size: 25px;
-      margin-left: 20px;
-      float: left;
-}
+      .implement-header {
+        text-align: center;
+      }
 
-.style-guide p{
-  color: rgb(0, 0, 0);
-  margin-top: 0px;
-  font-size: 18px;
-  margin-left: 19px;
-  width: 1300px;
-  float: left;
-  
-}
+      .implement-content {
+        width: 80vw;
+        padding-left: 3vw;
+      }
 
-.style-guide span{
-  color: #545555;
- font-style: italic;
-}
-
-.wireframes h5{
-  color: rgb(0, 0, 0);
-      margin-top: 40px;
-      font-size: 25px;
-      margin-left: 20px;
-      float: left;
-}
-
-.wireframes img{
-
-  display: inline-block;
-  margin-top: 95px;
-  width: 32%;
-  margin-left: 20px;
-}
-
-.implimentation-notes h6{
-  color: rgb(0, 0, 0);
-      margin-top: 20px;
-      font-size: 25px;
-      margin-left: 20px;
-      float: left;
-}
-
-.implimentation-notes p{
-  color: rgb(0, 0, 0);
-  margin-top: 0px;
-  font-size: 18px;
-  margin-left: 19px;
-  width: 1300px;
-  float: left;
-}
-
+      .implement-content span{
+        text-decoration: underline;
+      }
 /*Portfolio Page styling*/
 
   
-    
-   .portfolio-page h1 {
+.portfolio-main {
+  font-family: Arial, sans-serif;
+  margin-top: 16vh;
+ 
+ 
+}
+
+.portfolio-header{
+      font-size: 2.5em;
+      font-weight: bold;
+      text-decoration: underline;
       text-align: center;
-      margin: 50px 0;
-    }
-    
-    .gallery {
-      display: inline-block;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    
-    .item {
-      margin: 20px;
-      max-width: 300px;
-    }
-    
-    .item img {
-      max-width: 100%;
-      height: auto;
-    }
-    
-    .caption {
-      background-color: rgba(141, 136, 136, 0.7);
-      padding: 10px;
-      margin-right: 40px;
-      margin-left: 40px;
-      box-shadow: -10px 0 40px #000101
-    }
-    
-    .caption h2 {
-      font-size: 22px;
-      margin-bottom: 5px;
-    }
-    
-    .caption p {
-      font-size: 14px;
-      line-height: 1.5;
-    }
-    
+      margin-top: 1vh;
+}
+
+.cards {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-auto-rows: auto;
+  gap: 2vw;
+  font-family: sans-serif;
+  padding-top: 30px;
+ 
+}
+
+.card {
+  box-sizing: border-box;
+  box-shadow: black;
+
+  
+}
+
+.card__image {
+  width: 99%;
+  height: 35vh;
+  object-fit: cover;
+  display: block;
+  border-top: 2px solid #333333;
+  border-right: 2px solid #333333;
+  border-left: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+}
+
+.card__content {
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 15px;
+  background: #fafafa;
+  border-right: 2px solid #333333;
+  border-left: 2px solid #333333;
+}
+
+.card__content > p:first-of-type {
+  margin-top: 0;
+}
+
+.card__content > p:last-of-type {
+  margin-bottom: 0;
+}
+
+.card__info {
+  padding: 2px;
+  
+  align-items: center;
+  color: #ffffff;
+  background: #000000;
+  font-size: 1em;
+  border-bottom: 1px solid #333333;
+  border-right: 1px solid #333333;
+  border-left: 1px solid #333333;
+}
+
+.card__info p{
+ margin-left: 25%;
+}
+
+
+
+
+
+
+
+/* .card {
+  border: 1px solid #ccc;
+  border-radius: 1.3rem;
+  padding: 3rem;
+  margin-bottom: 1rem;
+  background: #E3F2FD;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  width: 33%;
+  justify-content: space-between;
+}
+
+.card-header h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.625rem;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.625rem;
+}
+
+.card-description p {
+  line-height: 1.5;
+} */
