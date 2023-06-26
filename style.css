@@ -72,62 +72,111 @@ body.portfolio-page {
 }
 
 /* Nav Styling For All Pages */
-nav {
- position: fixed;
- top: 0;
- left: 50%;
- transform: translateX(-50%);
- width: 100%;
-  display: flex;
-   align-items: center;
-   justify-content: center;  
-  padding: 2vh 5vw;
+
+
+nav{
+  position: fixed;
+  top: 0;
   background-color: rgba(88, 198, 235, 0.4);
   border-radius: 10px;
-  height: 3vh;
-  transition: background-color 0.3s;
- 
-  
- 
+  height: 60px;
+  width: 100%;
 }
+
 
 nav.scrolled {
-background-color: rgba(69, 158, 187, 0.9) ;
-
-}
-
+  background-color: rgba(69, 158, 187, 0.9) ;
+  
+  }
 nav ul{
-  list-style-type: none;
   display: flex;
   justify-content: center;
-  align-items:center;
-}
-  
-  
-
-
-nav li{
-  margin-right: 2vw;
+  align-items: center;
+margin: 0;
+padding: 0;
 }
 
-nav a {
-  font-size: 1.5em;
-  font-weight: bold;
+nav ul li{
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+}
+nav ul li a{
   color: white;
+  font-size: 1.3em;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
   text-decoration: none;
-  padding: 1vh;
-  
+  font-weight: bold;
 }
-
-nav ul li a:hover {
+nav ul li a.active,a:hover{
   color: #000101;
   transition: .5s;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
 }
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 30px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+
+  nav ul li a{
+    font-size: 1em;
+  }
+}
+@media (max-width: 800px){
+  .checkbtn{
+    display: block;
+  }
+  nav{
+    height: 30px;
+  }
+  nav ul{
+   
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(69, 158, 187);
+    top: 40px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul li{
+    display: block;
+    margin: 40px 0;
+    line-height: 4px;
+  }
+  nav ul li a{
+    font-size: 1.2em;
+  }
+  a:hover,a.active{
+    color: #000101;
+  transition: .5s;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
 
 
- 
+
 /* Main Text Styling Index Page*/
 
 main.index-page-main {
@@ -143,7 +192,7 @@ main.index-page-main {
 
   main.index-page-main h1 {
     margin-top: 15vh;
-    font-size: 3vw;
+    font-size: 4em;
   }
   main.index-page-main span{
     color: rgb(0, 108, 165);
@@ -151,13 +200,14 @@ main.index-page-main {
 
   main.index-page-main h2{
     color: black;
-    font-size: 2.5vw;
+    font-size: 2.5em;
     margin-top: -2vh;
+    max-width: 60vw;
   }
 
   main.index-page-main p{
     color: rgb(255, 255, 255);
-    font-size: 2.5vh;
+    font-size: 1.5em;
     margin-top: -1.7vh;
     margin-left: .25vw;
     max-width: 60vw;
@@ -166,8 +216,9 @@ main.index-page-main {
 
   img.selfie-img{
     margin-top: -30vh;
-    margin-left: 70vw;
-    width: 18%; 
+   margin-right: 5vw;
+    float: right;
+    width: 22%; 
     
    
   }
@@ -196,6 +247,61 @@ main.index-page-main {
   transition: .3s;
   }
 
+  @media (max-width: 952px){
+
+    main.index-page-main h1{
+      font-size: 3em;
+    }
+
+    main.index-page-main h2{
+      font-size: 2em;
+    }
+
+    main.index-page-main p{
+      font-size: 1em;
+    }
+
+    .imagelist li img{
+      width: 5vw;
+    }
+
+    .imagelist li{
+      margin-top: 5vh;
+    }
+  }
+
+  @media (max-width: 526px){
+
+    main.index-page-main h1{
+      font-size: 2.5em;
+      
+    }
+
+    main.index-page-main h2{
+      font-size: 1.5em;
+      max-width: 80vw;
+      margin-top: 6vh;
+    }
+
+    main.index-page-main p{
+      font-size: .7em;
+      max-width: 80vw;
+      margin-top: 6vh;
+    }
+
+    img.selfie-img{
+display: none;
+    }
+
+    .imagelist li img{
+      width: 5vw;
+    }
+
+    .imagelist li{
+      margin-top: 7vh;
+    }
+  }
+
   /* Main Text Styling Profile Page */
 
   .page-header {
@@ -207,7 +313,7 @@ main.index-page-main {
     font-size: 3em;
     font-weight: bold;
     text-decoration: underline;
-    margin-top: 8vh;
+    margin-top: 10vh;
   }
   
   
@@ -228,9 +334,10 @@ main.index-page-main {
 
   
   
-  .profile-section header h2, h3, h4 {
+  .profile-section header h2, h3, h4, h5 {
     font-size: 1.5em;
     margin-top: 0;
+    text-align: center;
   }
   
   .profile-section article p {
@@ -275,21 +382,65 @@ main.index-page-main {
       font-size: 3em;
       font-weight: bold;
       text-decoration: underline;
-      margin-top: 8vh;
+      margin-top: 10vh;
       
     }
-  
+
+    .tabContainer{
+      
+      width: 90vw;
+      height: 100%;
+      margin: 0 auto;
+      
+    }
+    .buttons{
+
+    height: 15%;
+      margin-top: 10vh;
+  }
+
+  .buttons button{
+    width: 25%;
+    height: 100%;
+    float: left;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma;
+    font-size: 2em;
+    color: #ffffff;
+    background-color: rgba(230, 230, 230, 0.7);
+    /* background: linear-gradient(90deg, rgba(173, 247, 242, 0.6), rgba(91, 195, 255, 0.6)); */
+  }
+
+.buttons button:hover{
+  background-color: rgba(34, 34, 34, 0.4);
+
+}
+
+.tabPanel{
+  height: 85%;
+  background-color: gray;
+
+  text-align: center;
+  padding-top: 2vh;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  display: none;
+}
     .essay-content {
-      width: 60vw;
+      width: 70vw;
       color: #000101;
-      background: linear-gradient(90deg, rgba(173, 247, 242, 0.6), rgba(91, 195, 255, 0.6));
-      border: #000101;
+      /* background: linear-gradient(90deg, rgba(173, 247, 242, 0.6), rgba(91, 195, 255, 0.6)); */
+      /* border: #000101; */
       padding: 5vh;
       margin: 2vh auto;
-      margin-top: 8vh;
+      margin-top: 4vh;
       display: block;
-    font-size: 1.3em;
-    box-shadow: -2vw 0 2vw #747474
+    
+    /* box-shadow: -2vw 0 2vw #747474 */
     
     
     }
@@ -300,18 +451,30 @@ main.index-page-main {
      
     }
     
-    
+    @media (max-width: 756px){
+.buttons button {
+font-size: 1.5em;
+}
+
+.essay-content{
+  width: 70vw;
+  
+}
+
+
+
+    }
 
     /* Main Text Styling Blog Page */
 
 
     
-    .main-header {
+    .blogs-main-header {
       font-size: 1.5em;
       font-weight: bold;
       text-decoration: underline;
       text-align: center;
-      margin-top: 8vh;
+      margin-top: 10vh;
     }
 
     /* accordion code referenced from: CodingLab (2022). How to Create Responsive Accordion in HTML CSS & JavaScript. [online] www.youtube.com. Available at: https://youtu.be/B_wscu_ijwU [Accessed 4 Jun. 2023].  */
@@ -326,7 +489,7 @@ main.index-page-main {
     
     .accordion {
       max-width: 90em;
-      width: 100%;
+      width: 85%;
       background: rgba(255, 255, 255, 0.3) ;
       margin: 0 auto;
       
@@ -392,11 +555,11 @@ main.index-page-main {
     /* Styling for Design Page */
 
     .main-header {
-      font-size: 1.5em;
+      font-size: 2em;
       font-weight: bold;
       text-decoration: underline;
       text-align: center;
-      margin-top: 8vh;
+      margin-top: 10vh;
     }
 
     .IxD {
@@ -522,22 +685,48 @@ main.index-page-main {
       .implement-content span{
         text-decoration: underline;
       }
+
+      .improvements{
+        width: 90vw;
+        color: #000101;
+        background: linear-gradient(90deg, rgba(173, 247, 242, 0.6), rgba(91, 195, 255, 0.6));
+        border: #000101;
+        padding: 1vh;
+        margin: 2vh auto;
+        margin-top: 5vh;
+        display: block;
+        font-size: 1.4em;
+      box-shadow: -2vw 0 2vw #747474
+      }
+
+      .improve-header {
+        text-align: center;
+      }
+
+      .improve-content {
+        width: 80vw;
+        padding-left: 3vw;
+      }
+
+      .improve-content span{
+        text-decoration: underline;
+      }
 /*Portfolio Page styling*/
 
   
 .portfolio-main {
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
   margin-top: 16vh;
  
  
 }
 
-.portfolio-header{
-      font-size: 2.5em;
+.portfolio-main h1{
+      font-size: 3em;
       font-weight: bold;
       text-decoration: underline;
       text-align: center;
-      margin-top: 1vh;
+      margin-top: -5vh;
 }
 
 .cards {
@@ -561,7 +750,7 @@ main.index-page-main {
 
 .card__image {
   width: 99%;
-  height: 35vh;
+  height: 45vh;
   object-fit: cover;
   display: block;
   border-top: 2px solid #333333;
@@ -609,31 +798,3 @@ main.index-page-main {
 
 
 
-/* .card {
-  border: 1px solid #ccc;
-  border-radius: 1.3rem;
-  padding: 3rem;
-  margin-bottom: 1rem;
-  background: #E3F2FD;
-  align-items: center;
-  justify-content: center;
-  display: grid;
-  grid-template-columns: repeat(3 1fr);
-  width: 33%;
-  justify-content: space-between;
-}
-
-.card-header h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.625rem;
-}
-
-.card-image img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 0.625rem;
-}
-
-.card-description p {
-  line-height: 1.5;
-} */

@@ -9,20 +9,25 @@
     <meta name="author" content="Yusuf">
     <title>Portfolio-Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/15e72afd39.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./Images/joystick.png" type="image/x-icon">
 
 </head>
-<body class="portfolio-page">
+<body class="portfolio-page h-portfolio">
     
     
         <header>
 
             
-                <nav>
+                <nav class="h-menu">
+                  <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa-solid fa-bars"></i>
+        </label>
                   <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="profile.html">Profile</a></li>
-                    <li><a href="blog.html">Blog Posts</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
                     <li><a href="essay.html">Essay</a></li>
                     <li><a href="design.html">Design</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
@@ -36,63 +41,63 @@
               
           
         </header>
-        <main class="portfolio-main">
+        <main class="portfolio-main h-feed">
 
-        <h1 class="portfolio-header">Portfolio</h1>
+        <h1 class="portfolio-header p-title">Portfolio</h1>
 
         <section class="cards">
-          <article class="card">
-          <img class="card__image" src="./Images/Walking Enemy Scamps (1)_resized (1).png" alt="Project1-Img">
-          <section class="card__content"> 
+          <article class="card h-entry">
+          <img class="card__image u-photo" src="./Images/Walking Enemy Scamps (1)_resized (1).png" alt="Project1-Img">
+          <section class="card__content p-summary"> 
             <p>
               Character Scamps That I Designed Using Krita Editing Software.
             </p>
             
           </section>
           <footer class="card__info">
-            <p> Character Design</p>
+            <p class="p-category"> Character Design</p>
             </footer>
           </article>
           
 
-          <article class="card">
-            <img class="card__image" src="./Images/Screenshot (5) (1) (1)_resized (1).png" alt="">
-            <section class="card__content"> 
+          <article class="card h-entry">
+            <img class="card__image u-photo" src="./Images/Screenshot (5) (1) (1)_resized (1).png" alt="">
+            <section class="card__content p-summary"> 
               <p>
                 One Of The First 3D Models I Have Made. I Have Modelled And Sculpted This 3D Model. 
               </p>
               
             </section>
             <footer class="card__info">
-              <p> 3D Modeling</p>
+              <p class="p-category"> 3D Modeling</p>
               </footer>
             </article>
             
 
-            <article class="card">
-              <img class="card__image" src="./Images/Jumping Enemy Scamps (1)_resized.png" alt="">
-              <section class="card__content"> 
+            <article class="card h-entry">
+              <img class="card__image u-photo" src="./Images/Jumping Enemy Scamps (1)_resized.png" alt="">
+              <section class="card__content p-summary"> 
                 <p>
                   Character Scamps That I Designed Using Krita Editing Software.
                 </p>
                 
               </section>
               <footer class="card__info">
-                <p>Character Design</p>
+                <p class="p-category">Character Design</p>
                 </footer>
               </article>
              
 
-              <article class="card">
-                <img class="card__image" src="./Images/IMG_20230605_154654 (1)_resized.jpg" alt="">
-                <section class="card__content"> 
+              <article class="card h-entry">
+                <img class="card__image u-photo" src="./Images/IMG_20230605_154654 (1)_resized.jpg" alt="">
+                <section class="card__content p-summary"> 
                   <p>
                     A science-fiction themed 3D gun I modelled and textured in Blender.
                   </p>
                   
                 </section>
                 <footer class="card__info">
-                  <p>3D Modeling</p>
+                  <p class="p-category">3D Modeling</p>
                   </footer>
                 </article>
                 

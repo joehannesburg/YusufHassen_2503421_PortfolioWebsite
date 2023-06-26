@@ -9,16 +9,21 @@
     <meta name="author" content="Yusuf">
     <title>Design Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/15e72afd39.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./Images/joystick.png" type="image/x-icon">
 </head>
 <body class="design-page">
 
     <header>
-        <nav>
+        <nav class="h-menu">
+          <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa-solid fa-bars"></i>
+        </label>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="profile.html">Profile</a></li>
-            <li><a href="blog.html">Blog Posts</a></li>
+            <li><a href="blog.html">Blogs</a></li>
             <li><a href="essay.html">Essay</a></li>
             <li><a href="design.html">Design</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
@@ -30,7 +35,7 @@
       </header>
 
       <main>
-      <section class="design-main">
+      <section class="design-main h-feed">
 
       
       <header class="main-header"> <h1>Design</h1></header>
@@ -110,6 +115,23 @@
       </article>
       </section>
 
+      <section class="improvements">
+        <header class="improve-header"><h2>Website Improvement</h2></header>
+        <article class="improve-content">
+        <p><span>Assignment 3:</span>  </p>
+        <p class="indent-txt">a) Style - The first thing I wanted to change was the aesthetic and colours of the website. Whilst I did like the previous orange and blue colours, I found it to be slightly distracting from the more important text. I also wanted to try and maintain the clean and minimalistic look. For that reason I chose this blueish grey background which is showcased on every page and which allows me to have the important text stand out. </p>
+        <p class="indent-txt">b) HTML - After receiving feedback from the previous edition of the website, I made a few changes to my code. With HTML I got rid of all divs and I added in more semantic markup. </p>
+        <p class="indent-txt">c) CSS - In my previous website, I didn't make use of relative measurement and responsive design. Using CSS, I now changed all my measurements to relative measurements and my website is mostly responsive, with the exception of a few things like the navbar and index page.</p>
+        <p class="indent-txt">d) JavaScript - This was my first time using JavaScript so I wasn't too well versed with it. I added in two functions with JavaScript. The first function is for the blogs. It allowed me to create an accordion style blog page in which you can simply click on a blog to expand or close it. The second function I added in was for the navbar. When you begin scrolling on the website the navbar will remain at the top and it will slightly change its background colour so that it is more visible when shown over other content. </p>
+
+         <p><span>Exam:</span> </p>
+          <p class="indent-txt">a) Style - I kept the same style and aesthetic from the previous assignment as I was pleased with the way it came out. The only main styling change I made this time was for the essay page.  </p>
+          <p class="indent-txt">b) HTML - I was extremely pleased to see that I did well with my semantic markup and coding structures for the previous assignment. For this exam, I have added in a few micro-formats throughout my code as I did not have this previously.</p>
+          <p class="indent-txt">c) CSS - The one thing I was not able to do in the previous assignment was have a responsive navbar, as well as having media queries for responsive design. I have added in media queries and my navbar is now fully responsive which will allow the website to be viewed on multiple devices and screen sizes. </p>
+          <p class="indent-txt">d) JavaScript - I lost most of my marks in the previous section because of not having enough JavaScript. I knew I needed to add this in to my final exam website. I have 4 JavaScript functions which allow for JS driven navigation, a sticky navbar which changes colour when you scroll, an accordion style blog post page which creates a neat and organized layout of all the blogs, and finally, a tabbed style essay page which allows you to switch between the two essays with a click of a button. I also made sure I followed the rubric requirements for JavaScript.I have concise functions,consistent variable declerations, consistent semicolons, consistent case usage and consistent JS driven navigation. There is also 4 parts of the website which require JavaScript to function. The navbar, navigation to other pages, the essay page and the blog page all require JavaScript to function.  </p>
+
+      </article>
+      </section>
     </section>
 
   </main>

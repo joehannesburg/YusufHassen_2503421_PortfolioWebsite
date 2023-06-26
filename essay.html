@@ -9,17 +9,22 @@
     <meta name="author" content="Yusuf">
     <title>Essay Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/15e72afd39.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./Images/joystick.png" type="image/x-icon">
 </head>
 <body
 
     class= "essay-page">
     <header>
-    <nav>
+    <nav class="h-menu">
+      <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa-solid fa-bars"></i>
+        </label>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="profile.html">Profile</a></li>
-        <li><a href="blog.html">Blog Posts</a></li>
+        <li><a href="blog.html">Blogs</a></li>
         <li><a href="essay.html">Essay</a></li>
         <li><a href="design.html">Design</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
@@ -31,64 +36,130 @@
   
   </header>
   
-    <main class="essay-page-main">
-      <h1>Essay</h1>
-<article class="essay-content"> 
-  <p> 
-    As we’ve learned throughout the course of this semester, UI and UX are extremely important and is the fundamental aspect of a website. If you want your website to function well, look good as well as serve the purpose it’s meant to serve, you need to ensure that the UI and UX of the website is good. UI is directly linked to UX. If the user interface isn’t good, the user experience won’t be good. “A well-designed UI/UX can improve user engagement, increase site traffic, and enhance user satisfaction. It helps users to navigate the site easily, find relevant information, and perform desired actions.” (sgstechnologies, n.d.). 
+    <main class="essay-page-main h-feed">
+      <h1>Essays</h1>
+
+      <section class="tabContainer">
+        <section class="buttons">
+          <button onclick="showPanel(0,'rgba(11, 188, 228, 0.6)')">Essay 1</button>
+          <button onclick="showPanel(1,'rgba(91, 195, 255, 0.6)')">Essay 2</button>
+         
+        </section>
+          
+         <section class="tabPanel">
+          <article class="essay-content p-summary"> 
+      <p> 
+        As we’ve learned throughout the course of this semester, UI and UX are extremely important and is the fundamental aspect of a website. If you want your website to function well, look good as well as serve the purpose it’s meant to serve, you need to ensure that the UI and UX of the website is good. UI is directly linked to UX. If the user interface isn’t good, the user experience won’t be good. “A well-designed UI/UX can improve user engagement, increase site traffic, and enhance user satisfaction. It helps users to navigate the site easily, find relevant information, and perform desired actions.” (sgstechnologies, n.d.). 
+         </p>
+     <p>
+      The website I chose to talk about is the ‘BusinessTech’ website (BusinessTech, 2019). This website is a South African news website that covers a range of topics related to business, technology, and finance. The website features articles, news stories, and opinion pieces on topics such as entrepreneurship, innovation, markets, investments, and more. As we were meant to find a South African website, I searched for, ‘South African websites’ on Google and not many came up. Some of the big and well-known websites with millions of users were the few that did show. This proved to me how important SEO is, as there are millions of South African websites, but when searching for ‘South African Websites’ only a few showed up on Google. 
+    Through the process of learning about web design and through the process of actually making a website, you start to naturally notice what’s good and what’s bad. Things I normally wouldn’t take note of, I now start to notice. The framework I use to identify good UI/UX design is “The Basic Principles of User Interface Design” (Studio by UXPin, 2020). 
+    
+    
      </p>
- <p>
-  The website I chose to talk about is the ‘BusinessTech’ website (BusinessTech, 2019). This website is a South African news website that covers a range of topics related to business, technology, and finance. The website features articles, news stories, and opinion pieces on topics such as entrepreneurship, innovation, markets, investments, and more. As we were meant to find a South African website, I searched for, ‘South African websites’ on Google and not many came up. Some of the big and well-known websites with millions of users were the few that did show. This proved to me how important SEO is, as there are millions of South African websites, but when searching for ‘South African Websites’ only a few showed up on Google. 
-Through the process of learning about web design and through the process of actually making a website, you start to naturally notice what’s good and what’s bad. Things I normally wouldn’t take note of, I now start to notice. The framework I use to identify good UI/UX design is “The Basic Principles of User Interface Design” (Studio by UXPin, 2020). 
+     <p>
+      The first thing I noticed when opening up the website was the simple and clean aesthetic. It uses simple colours and simple text which stand out and which is easy to view. This ties in with one of the basic principles of user design, aiming for simplicity (Studio by UXPin, 2020).
+    The nav bar is situated at the top of the page and it has links to all the different genres of articles that the website has. It also has a hover feature which highlights the things which you hover over. This is a common practice with nav bars and makes the choices of the user more obvious and easy to understand. The search bar is also located on the top right of the page, which is a conventional and common practice that also ties into it being a simple design. In terms of providing useful feedback, wherever I am on the website, I am well aware of it and I understand what is going on. I also know how to navigate to where I came from and where I want to go to. The website is able to reduce the cognitive load, as mentioned in “The Basic Principles of User Interface Design” (Studio by UXPin, 2020) by breaking down all actions and information into chunks. There is a list view of different articles which shows an image and a heading for the article. This is extremely helpful in showing me an overview of what the article is about before even going into the article and it also breaks down the information. Instead of showing me half a page of information for each article before clicking it, it just shows a brief overview of information. When clicking on a specific article, the entire article is displayed and nothing else distracts me from viewing the article. It also follows the 3-click rule (Studio by UXPin, 2020) as it does not take more than 3 clicks to access any information. 
+    
+     </p>
+    
+     <p>
+      As I’ve mentioned previously, the website uses basic and simple colours and text, with white being the primary background colour and black being the primary text colour. This makes the website accessible, even for those that may be visually impaired (Studio by UXPin, 2020). 
+    I’ve used the website on a laptop, phone as well as an Ipad and the website was optimized for all 3. This forms part of the flexibility of the website (Studio by UXPin, 2020). Overall in terms of the UI, the layout is easy to navigate, with clear headings and sections for different types of news articles. All information is easily accessible and the website makes good use of most of the basic design principles for user interface (Studio by UXPin, 2020).
+    
+     </p>
+     <p>
+      “UX exists in the mind of the user, not in the object (or artifact). Thus, UX is not identified as the object itself; instead, it is the user’s experience that occur as a result of interactions with the object” (Goldberg, 2021). The user experience is different for everyone, as mentioned in the quote above, UX exists in the mind of the user. Whilst it is different for everyone, based on my experience and interaction with the website, I can say that, due to the user-interface being designed well, this allowed the user-experience to also work well. The website appears to be optimized for speed and performance as there was no lagging or slow response times. Everything loaded extremely quickly. The audience for this website is South Africans as almost all the articles showcased are related to South Africans. Residents of South Africa are a very broad audience, and different people are interested in different things, however, the website manages to focus on a few different audiences amongst South Africans. It does this by making use of navigational tools. Right at the top of the page is a nav bar which has different broad topics which different people might be interested in. For example, I’m not a big fan of politics and I don’t enjoy spending my time consuming information on politics, but I do enjoy tech and everything related to tech. I can click on the ‘Technology’ link in the nav bar and all tech related articles will be shown to me. Pam Berg states that you should be judicious with menu choices, as too many options can cause a visitor to pick nothing (Berg, 2021). She also states that a good menu should have a clear selection of options, neatly categorized into logical groups, and this is what the ‘BusinessTech’ website does. Ensuring clear wording on menus and buttons is also something that Pam mentions as a good UX practice (Berg, 2021). ‘BusinessTech’ follows this practice as all menus and buttons have clear and simple wording such as, submit, login, follow us, about us. 
+     </p>
+    
+     <p>
+      “Ethical design basically means making conscious design decisions that do good and do not harm anyone—either intentionally or unintentionally” (Ganchi, 2021). Ethical design is an important topic, especially with things that will be posted to the public and accessed by the public. In the context of a news website, ethical design includes accessibility, accuracy, transparency, privacy as well as influence. With accessibility, a news website should be accessible to all users, irrespective of their conditions. I mentioned previously how this website is accessible to people with visual impairments as well. With accuracy, a news website needs to provide accurate and unbiased information. Unfortunately in this instance, it isn’t 100% clear as to how accurate the news posts are, but with 30 million page views, it definitely leads to the fact that people enjoy what they read and it is therefore accurate. In terms of transparency, websites should be transparent about its funding sources, and affiliations. This is something that ’BusinessTech’ isn’t transparent about as its funding sources, apart from the cost of advertising and running ads isn’t disclosed to the public. 
+    Privacy is also a very important aspect about ethical design practices. ‘BusinessTech’ does not ask for any personal information and there is no information disclosed by the users. You can view the articles for free without disclosing any personal information. From my experience with the website, I did not notice any ill or misdirected intent, specifically with dark patterns on the website (Goldberg, 2021). I was not pushed in a certain direction and at no point was I pushed into giving up my information or paying for anything.
+    
+     </p>
+    
+     <p>
+      In conclusion, ‘BusinessTech’ website follows most of the basic design principles and showcases a good User-Interface. Due to this the user-experience is also pleasant. In terms of ethical design, the website does follow a lot of the ethical design practices, however, there are a few areas that could be improved on, such as the transparency of the website. 
+     </p>
+    
+     <p> <span> References:</span>
+     
+     </p>
+    
+    <p> Berg, P. (2021). UX Design 101: What Makes a Great Website? | Forge and Smith. [online] Forge and Smith, Vancouver Web Design Company. Available at: https://forgeandsmith.com/blog/ux-design-101-great-website/.</p>
+    
+    <p> BusinessTech (2019). BusinessTech. [online] Businesstech.co.za. Available at: https://businesstech.co.za/news/.</p>
+    
+    <p> Ganchi, J. (2021). Ethical Design: Why Is It Critical for UX Designers? :: UXmatters. [online] www.uxmatters.com. </p>
+    
+    <p> Goldberg, P. 2021. Ethics of UX Practice:
+    You, Your Audience and The Weight of Experience , 23 February 2021. Lecture notes (WSOA3028A). Johannesburg:Wits School of Arts, University of the Witwatersrand.</p>
+    
+    <p> sgstechnologies (n.d.). Importance of ui/ux Design for Website Development | SGS Technologie. [online] www.sgstechnologies.net. .</p>
+    
+    <p> Studio by UXPin (2020). The Basic Principles of User Interface Design. [online] Studio by UXPin. Available at: https://www.uxpin.com/studio/blog/ui-design-principles/. </p>
+    
+    
+  
+  </section>
+  
+  </article>
 
+  <section class="tabPanel">
+    <article class="essay-content p-summary"> 
 
- </p>
- <p>
-  The first thing I noticed when opening up the website was the simple and clean aesthetic. It uses simple colours and simple text which stand out and which is easy to view. This ties in with one of the basic principles of user design, aiming for simplicity (Studio by UXPin, 2020).
-The nav bar is situated at the top of the page and it has links to all the different genres of articles that the website has. It also has a hover feature which highlights the things which you hover over. This is a common practice with nav bars and makes the choices of the user more obvious and easy to understand. The search bar is also located on the top right of the page, which is a conventional and common practice that also ties into it being a simple design. In terms of providing useful feedback, wherever I am on the website, I am well aware of it and I understand what is going on. I also know how to navigate to where I came from and where I want to go to. The website is able to reduce the cognitive load, as mentioned in “The Basic Principles of User Interface Design” (Studio by UXPin, 2020) by breaking down all actions and information into chunks. There is a list view of different articles which shows an image and a heading for the article. This is extremely helpful in showing me an overview of what the article is about before even going into the article and it also breaks down the information. Instead of showing me half a page of information for each article before clicking it, it just shows a brief overview of information. When clicking on a specific article, the entire article is displayed and nothing else distracts me from viewing the article. It also follows the 3-click rule (Studio by UXPin, 2020) as it does not take more than 3 clicks to access any information. 
+      <span>Introduction</span>
 
- </p>
+      <p>“Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as pandemics and nuclear war” (CAIS, 2023).</p>
 
- <p>
-  As I’ve mentioned previously, the website uses basic and simple colours and text, with white being the primary background colour and black being the primary text colour. This makes the website accessible, even for those that may be visually impaired (Studio by UXPin, 2020). 
-I’ve used the website on a laptop, phone as well as an Ipad and the website was optimized for all 3. This forms part of the flexibility of the website (Studio by UXPin, 2020). Overall in terms of the UI, the layout is easy to navigate, with clear headings and sections for different types of news articles. All information is easily accessible and the website makes good use of most of the basic design principles for user interface (Studio by UXPin, 2020).
+      <p>The above statement was released by CAIS (Center for AI Safety) and signed by “Hundreds of AI scientists, academics, tech CEOs and public figures” such as Bill Gates, Sam Altman Ted Lieu, and many others (Lomas, 2023). CAIS is an organization that “exists to ensure the safe development and deployment of AI”. Earlier this year they had drawn up and released the above statement with the hopes of overcoming the obstacle and opening up the discussion to this topic. In this essay we’ll dissect the statement made by CAIS using the framework of Internet, Society and Design Justice.</p>
 
- </p>
- <p>
-  “UX exists in the mind of the user, not in the object (or artifact). Thus, UX is not identified as the object itself; instead, it is the user’s experience that occur as a result of interactions with the object” (Goldberg, 2021). The user experience is different for everyone, as mentioned in the quote above, UX exists in the mind of the user. Whilst it is different for everyone, based on my experience and interaction with the website, I can say that, due to the user-interface being designed well, this allowed the user-experience to also work well. The website appears to be optimized for speed and performance as there was no lagging or slow response times. Everything loaded extremely quickly. The audience for this website is South Africans as almost all the articles showcased are related to South Africans. Residents of South Africa are a very broad audience, and different people are interested in different things, however, the website manages to focus on a few different audiences amongst South Africans. It does this by making use of navigational tools. Right at the top of the page is a nav bar which has different broad topics which different people might be interested in. For example, I’m not a big fan of politics and I don’t enjoy spending my time consuming information on politics, but I do enjoy tech and everything related to tech. I can click on the ‘Technology’ link in the nav bar and all tech related articles will be shown to me. Pam Berg states that you should be judicious with menu choices, as too many options can cause a visitor to pick nothing (Berg, 2021). She also states that a good menu should have a clear selection of options, neatly categorized into logical groups, and this is what the ‘BusinessTech’ website does. Ensuring clear wording on menus and buttons is also something that Pam mentions as a good UX practice (Berg, 2021). ‘BusinessTech’ follows this practice as all menus and buttons have clear and simple wording such as, submit, login, follow us, about us. 
- </p>
+<span>CAIS and Their statement</span>
 
- <p>
-  “Ethical design basically means making conscious design decisions that do good and do not harm anyone—either intentionally or unintentionally” (Ganchi, 2021). Ethical design is an important topic, especially with things that will be posted to the public and accessed by the public. In the context of a news website, ethical design includes accessibility, accuracy, transparency, privacy as well as influence. With accessibility, a news website should be accessible to all users, irrespective of their conditions. I mentioned previously how this website is accessible to people with visual impairments as well. With accuracy, a news website needs to provide accurate and unbiased information. Unfortunately in this instance, it isn’t 100% clear as to how accurate the news posts are, but with 30 million page views, it definitely leads to the fact that people enjoy what they read and it is therefore accurate. In terms of transparency, websites should be transparent about its funding sources, and affiliations. This is something that ’BusinessTech’ isn’t transparent about as its funding sources, apart from the cost of advertising and running ads isn’t disclosed to the public. 
-Privacy is also a very important aspect about ethical design practices. ‘BusinessTech’ does not ask for any personal information and there is no information disclosed by the users. You can view the articles for free without disclosing any personal information. From my experience with the website, I did not notice any ill or misdirected intent, specifically with dark patterns on the website (Goldberg, 2021). I was not pushed in a certain direction and at no point was I pushed into giving up my information or paying for anything.
+<p>As mentioned above, CAIS is an organization that focuses on the safety and effects of AI. Many of the big names in tech and power signed this statement. This shows us that the opinion and statement shared by CAIS are agreed upon and shared by all the prominent people that have signed it. What is ironic to me is that CEO of OpenAI, Sam Altman had also signed this. OpenAI are the creators of ChatGpt. Frackiewics writes in his article that ChatGPT emerged as a catalyst for change in the pursuit for energy-efficient AI innovations (Frąckiewicz, 2023). AI has been in existence for a while, but with the emergence and use of ChatGPT, the benefits and potential harms of AI were brought to light. The fact that the CEO of the company that created ChatGPT had signed the statement by CAIS proves that even the creator fears the creation. 
+  CAIS says that AI is becoming more capable and more advanced, and due to that, there are risks that come with it. Some of the risks they mention that AI poses are, weaponization, misinformation, proxy gaming, enfeeblement, value lock-in, emergent goals, deception and power-seeking behaviour (CAIS, 2023). They go into detail on each of these categories and explain how people or organizations with evil intent can use AI for the wrong purposes, and due to this, there is the risk of AI. 
+  Whilst this whole fight for the correct and noble thing seems all well and good, Lomas says that there is limited public information on this organization, and there is no transparency about how they are funded (Lomas, 2023). 
+  </p>
 
- </p>
+  <span>Internet, Society and Design Justice</span>
 
- <p>
-  In conclusion, ‘BusinessTech’ website follows most of the basic design principles and showcases a good User-Interface. Due to this the user-experience is also pleasant. In terms of ethical design, the website does follow a lot of the ethical design practices, however, there are a few areas that could be improved on, such as the transparency of the website. 
- </p>
+  <p>In order to unpack algorithmic culture and AI on the internet further, we’ll be using the Internet, Society and Design Justice framework. In particular, we’ll be using the articles posted by the Institute for Internet & the Just Society and other articles referenced in their articles. Yuval Harari says that the ongoing AI revolution will change all lines of work and create many opportunities as well as challenges (Harari, 2017). With the rise of AI we have seen some of the capabilities it possesses. It is able to create art pieces, write compelling stories as well as writing working and efficient code. While there are issues on the morality of these AI software, it is not disagreed that these software have some really amazing capabilities. Within seconds of giving a prompt to the AI bot you will be presented with a response. However, these capabilities possess a threat to human jobs. Copywriters, software designers, web designers and many other roles are at risk of being overtaken by AI. Sofia Ghezzi speaks of a “Useless Class” that will be created due to the revolution of AI (Ghezzi, 2022). She says that all the jobs that AI replaces will in turn create a useless class of people who no longer have jobs and who might not be employable again (Ghezzi, 2022). Having this useless class of people can lead to large economic and societal issues. Ghezzi asks the question of how these people will sustain themselves and continue to live without purpose. As a student studying digital arts, this is especially scary for me, as the potential careers I could go into are all at the risk of being taken over by AI. If a company can get a job done for free or even a fraction of the price, they’d much rather do that than to have to hire someone and pay them a full time salary and deal with all the stress and complications that come with having employees. </p>
 
- <p> <span> References:</span>
- 
- </p>
+  <p>Due to these risks of the speedy fast emergence and growth of AI, Harari states that governments need to try and slow down the pace at which AI is growing so that we have time to adjust to it (Harari, 2017). Harari also goes on to say that it would not be wise to completely stop AI, as there are many uses and advantages of it, rather, it would be better to create new jobs for the people who might fall part of the useless class (Harari, 2017). 
+    With every revolution, jobs were lost and jobs were created. They say that the majority of the jobs that will be available in 30 years have not even been heard of at this moment. In order to balance out the effects of unemployment and social and economic challenges, there definitely has to be a rise in new opportunities. 
+    </p>
 
-<p> Berg, P. (2021). UX Design 101: What Makes a Great Website? | Forge and Smith. [online] Forge and Smith, Vancouver Web Design Company. Available at: https://forgeandsmith.com/blog/ux-design-101-great-website/.</p>
+    <span>Algorithms and AI</span>
 
-<p> BusinessTech (2019). BusinessTech. [online] Businesstech.co.za. Available at: https://businesstech.co.za/news/.</p>
+    <p>“Everything people see and do on the web is a product of algorithms” (Rainie and Anderson, 2017). Authors Rainie and Anderson go in-depth on how algorithms make up everything we do and use on the internet and our smartphones. Barry Chudakov says that if every algorithm suddenly stopped working, the world would come to an end as nothing would function. The internet would collapse, apps would collapse, and banks, hospitals, and governments would collapse as well. So it is clear that algorithms are important. AI itself is simply a bunch of algorithms working together. However, whilst algorithms are an important part of the digital age, like most things, even though they may be created for the greater good, in the wrong hands they can be detrimental. Rainie and Anderson give the example of how hackers had slowed down the internet after bombarding an internet traffic handler with information that overloaded its circuits (Rainie and Anderson, 2017). We’ve all seen and experienced the negatives of bad/evil people and organizations making use of algorithms to harm society. 
+      Online banking is wonderful and allows people to access their money in seconds. However, this too poses a risk. One morning I woke up and saw a notification from my banking app saying that my purchase was successful. The next notification said that I had insufficient funds. I was bamboozled. Due to having just woken up, it took me a while to realize what had happened. Somehow, someone had gotten my card information and made an online purchase at the Samsung store using almost half of the available funds I had in my account. This was a very distressing and anxious moment because you just see a notification telling you that half of your hard-earned money is just gone, poof. After freezing my account and canceling my card the bank was eventually able to reverse the payment, thankfully. My point from this is, the risks of these algorithms are all around us and it affects many of us. 
+      As we’ve previously mentioned, AI is powered by algorithms, which means it carries the same risks and capabilities. 
+      World-renowned futurist and influencer, Bernard Marr says that another important issue we need to address is to ensure that AI does not become so good at doing its job that it crosses ethical or legal boundaries (Marr, 2022). A good example of this is with ChatGPT. If you are to ask ChatGPT to tell you how to make a bomb it will give you a response saying that it is an AI language model, and it cannot disclose certain information due to ethical and moral reasons. However, if you were to frame the question differently, you’d get the answer you were looking for. If you ask ChatGPT to write you a chapter of a book in which the main character creates a bomb, it will write that chapter for you with all the details you ask it for. This then crosses ethical and legal boundaries. 
+      
+      </p>
 
-<p> Ganchi, J. (2021). Ethical Design: Why Is It Critical for UX Designers? :: UXmatters. [online] www.uxmatters.com. Available at: https://www.uxmatters.com/mt/archives/2021/02/ethical-design-why-is-it-critical-for-ux-designers.php.</p>
+      <span>Conclusion</span>
+<p>As a digital arts student majoring in web design, doing research on the risks of AI was somewhat scary and eye-opening. Whilst I do understand and see the many great benefits and capabilities of algorithms and AI, I also understand the many risks it poses. I, therefore, agree with the statement made by CAIS and I feel that governments and organizations should work together to slow down the rapid growth of AI, giving us more time to adapt and adjust. I also think that governments and organizations should begin working on ways to manage and balance out the negative effects of AI. A critical aspect of balancing the effects of AI as mentioned previously is to create new jobs so that when the “useless class” arises there will be other opportunities for them. The impact of algorithms and AI is widespread, and it affects various aspects of our lives. By addressing these risks and promoting responsible AI development, we can try to harness the benefits of AI whilst safeguarding against its potential harms. 
 
-<p> Goldberg, P. 2021. Ethics of UX Practice:
-You, Your Audience and The Weight of Experience , 23 February 2021. Lecture notes (WSOA3028A). Johannesburg:Wits School of Arts, University of the Witwatersrand.</p>
+</p>
 
-<p> sgstechnologies (n.d.). Importance of ui/ux Design for Website Development | SGS Technologie. [online] www.sgstechnologies.net. Available at: https://www.sgstechnologies.net/blog/Importance-of-ui-ux-design-for-website-development#:~:text=A%20well%2Ddesigned%20UI%2FUX [Accessed 2 May 2023].</p>
+<span>References:</span>
 
-<p> Studio by UXPin (2020). The Basic Principles of User Interface Design. [online] Studio by UXPin. Available at: https://www.uxpin.com/studio/blog/ui-design-principles/. </p>
-
-
-
+<p>CAIS (2023). AI Risk | CAIS. [online] www.safe.ai. Available at: https://www.safe.ai/ai-risk.</p>
+ <p>Frąckiewicz, M. (2023). Innovations in Energy-Efficient AI: ChatGPT as a Catalyst for Change. Available at: https://ts2.space/en/innovations-in-energy-efficient-ai-chatgpt-as-a-catalyst-for-change/ [Accessed 18 Jun. 2023].</p>
+<p>Ghezzi, S. (2022). Artificial Intelligence Transforming our Societal Structure - The Rise Useless Class. Available at: https://www.internetjustsociety.org/useless-class [Accessed 23 Jun. 2023].</p>
+<p>Harari, Y.N. (2017). Reboot for the AI revolution. Nature, [online] 550(7676), pp.324–327. doi:https://doi.org/10.1038/550324a.</p>
+<p>Lomas, N. (2023). OpenAI’s Altman and Other AI Giants Back Warning of Advanced AI as ‘extinction’ Risk. Available at: https://techcrunch.com/2023/05/30/ai-extiction-risk-statement/ [Accessed 18 Jun. 2023].</p>
+<p>Rainie, L. and Anderson, J. (2017). Code-Dependent: Pros and Cons of the Algorithm Age.[Accessed 24 Jun. 2023].</p>
 
 </article>
+      </section>
+
+
+
+
+      </section>
+    
      
          <script src="script.js"></script>
 </body>

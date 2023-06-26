@@ -10,16 +10,21 @@
 
     <title>Profile Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/15e72afd39.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./Images/joystick.png" type="image/x-icon">
 </head>
 <body
-    class= "profile-page">
+    class= "profile-page h-card">
     <header>
-        <nav>
+        <nav class="h-menu">
+          <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa-solid fa-bars"></i>
+        </label>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="profile.html">Profile</a></li>
-            <li><a href="blog.html">Blog Posts</a></li>
+            <li><a href="blog.html">Blogs</a></li>
             <li><a href="essay.html">Essay</a></li>
             <li><a href="design.html">Design</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
@@ -28,9 +33,9 @@
         </nav>
       </header>
 
-        <main
+        <main class="h-entry">
         <header class="page-header">
-          <h1>About Me</h1>
+          <h1 class="p-title">About Me</h1>
         </header>
 
 
@@ -43,6 +48,7 @@
               <article>
                 <p class="year-txt"> <span>2021-2024 University of Witswatersrand</span>  </p>
                 <span class="position-txt">Honours Degree</span> 
+
                 <p>Honours in Bachelor of Arts in Digital Arts (Majoring in Interactive Media and Writing & Interactivity)</p>
                 <p class="year-txt"> <span>2008-2019 Lenasia Muslim School</span></p>
                 <p class="position-txt">National Senior Certificate</p>
@@ -76,21 +82,36 @@
                 <h4>Experience</h4>
               </header>
               <article>
-                <p class="year-txt"><span>2020-2023</span> <span>Rev</span>  </p>
+                <p class="year-txt"><span>2020-2023</span> <span class="p-name">Rev</span>  </p>
                 <span class="position-txt">Transcriber and Captioner</span> 
                 <p>-Transcribe audio files into text.</p>
                 <p>-Transcribe and sync captions to vidoes.</p>
                 
-                <p class="year-txt"><span>2020-2021</span>  <span>Gauteng Department Of Education</span></p>
+                <p class="year-txt"><span>2020-2021</span>  <span class="p-name">Gauteng Department Of Education</span></p>
                 <span class="position-txt">Quality Assurer</span>
                 <p>-Tasked with quality assuring Matric Examination scripts.</p>
                 <p>-Appointed as team leader to manage my team and report to management daily.</p>
                 
-                <p class="year-txt"><span>2020-2021</span> <span>Skincare & Co</span>  </p>
+                <p class="year-txt"><span>2020-2021</span> <span class="p-name">Skincare & Co</span>  </p>
                 <span class="position-txt">Manager</span>
                 <p>-Started and managed an online e-commerce store.</p>
                 <p>-Managed orders and stock.</p>
                 <p>-Managed marketing and sales.</p>
+
+              </article>
+            </section>
+
+            <section class="profile-section awards">
+              <header>
+                <h5>Awards</h5>
+              </header>
+              <article>
+                <p class="year-txt"><span>2022</span> <span class="p-name">Golden Key International Honour Society </span>  </p>
+                <span class="position-txt">Golden Key Award</span> 
+                <p>Awarded the Golden Key award for being amongst the top 10% of students in my class.</p>
+               
+                
+             
 
               </article>
             </section>

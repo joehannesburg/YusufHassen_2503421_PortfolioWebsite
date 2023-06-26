@@ -11,33 +11,39 @@
 
     <title>Home Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/15e72afd39.js" crossorigin="anonymous"></script>
+
     <link rel="shortcut icon" href="./Images/joystick.png" type="image/x-icon">
 </head>
 <body
-    class= "index-page">
+    class= "index-page h-feed">
   <header>
-  <nav>
+  <nav class="h-menu">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa-solid fa-bars"></i>
+        </label>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="profile.html">Profile</a></li>
-      <li><a href="blog.html">Blog Posts</a></li>
+      <li><a href="blog.html">Blogs</a></li>
       <li><a href="essay.html">Essay</a></li>
       <li><a href="design.html">Design</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
     </ul>
-
+  
   </nav>
 
   
 
 </header>
 
-  <main class="index-page-main">
-    <h1>Hi! I'm <span>Yusuf.</span></h1>
-    <h2>Digital Artist & Aspiring Business Owner.</h2>
-    <p>Welcome To My Website. Feel free to browse around,  see the work I've done and learn more about me.</p>
+  <main class="index-page-main h-entry" >
+    <h1 class="p-name">Hi! I'm <span>Yusuf.</span></h1>
+    <h2 class="p-title">Digital Artist & Aspiring Business Owner.</h2>
+    <p class="p-summary">Welcome To My Website. Feel free to browse around,  see the work I've done and learn more about me.</p>
      
-    <img src="./Images/Picsart_23-04-19_10-39-59-112.png" alt="SelfieImg" class="selfie-img">
+    <img src="./Images/Picsart_23-04-19_10-39-59-112.png" alt="SelfieImg" class="selfie-img" class="u-photo">
    <!-- <a href="profile.html"> <button type = "button">Profile</button>
    </a> -->
 
@@ -45,7 +51,7 @@
 
 
 
-<footer>
+<footer class="h-card">
   <ul class = "imagelist">
 
       <li><a href="https://www.instagram.com/_yusufhassen_/" target="_blank"> <img src="./Images/instagram.png" alt="insta-logo"></a>   </li>
